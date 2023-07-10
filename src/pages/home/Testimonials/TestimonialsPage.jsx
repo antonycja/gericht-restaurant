@@ -9,13 +9,15 @@ export default function TestimonialsPage() {
       <div className="testimonials-page">
         <section>
           <div className="page-container">
-            <PageHeader classNam="testimony-header"
+            <PageHeader
+              classNam="testimony-header"
               title={"Testimony"}
               heading={"Happy customers"}
             />
             <div className="test">
               {users.map((user, index) => (
                 <Testimonial
+                  key={index}
                   name={user.name}
                   position={user.position}
                   img={user.img}
