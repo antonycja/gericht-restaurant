@@ -1,0 +1,10 @@
+.image-box img {
+  width: 30rem;
+  /* height: 41rem; */
+}
+
+@media screen and (max-width: 1400px) {
+  .image-box img {
+    width: 28rem;
+  }
+}

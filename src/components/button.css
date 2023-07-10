@@ -1,0 +1,8 @@
+.btn-component {
+    background-color: var(--color-golden);
+    padding: 0.5rem 2rem;
+    font-family: var(--font-base);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+}

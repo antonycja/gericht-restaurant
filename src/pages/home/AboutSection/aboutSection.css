@@ -1,0 +1,45 @@
+.aboutSection {
+  background-image: url("../../../assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-img {
+  z-index: 2;
+}
+.bottom-img {
+  position: absolute;
+  z-index: 0;
+}
+.bottom-img img {
+  /* opacity: 0.5; */
+  height: 50vh !important;
+}
+
+.page-container {
+  position: relative;
+}
+.about,
+.history {
+  position: relative;
+  z-index: 10;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-img {
+  width: 100%;
+  z-index: 1;
+}
+.aboutSection img {
+  height: 80vh;
+}
+
+@media screen and (max-width: 1600px) {
+  .page-container {
+    gap: 0.5rem;
+  }
+}

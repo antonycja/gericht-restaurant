@@ -1,0 +1,14 @@
+.promotionImage img {
+  height: 80vh;
+}
+.promotions {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+}
+.promotions-page .page-container {
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+}

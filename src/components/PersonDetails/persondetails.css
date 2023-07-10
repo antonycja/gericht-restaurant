@@ -1,0 +1,35 @@
+.person-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.person-details .person h4 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+}
+.person-details .person p {
+  color: var(--color-lightgray);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.04rem;
+}
+.person-details .person {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.person-details h2 {
+  color: var(--color-lightgray);
+  font-family: Poppins;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.16rem;
+}

@@ -1,0 +1,75 @@
+.promoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+.promoContent .title {
+  color: var(--color-white);
+  text-align: center;
+  font-family: var(--font-base);
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.1125rem;
+  text-transform: capitalize;
+}
+.promo h5 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.05rem;
+  text-transform: capitalize;
+  text-align: left;
+}
+.promo-price h5 {
+  color: var(--color-white);
+}
+.promos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.promo-title-text {
+  width: 12rem;
+}
+
+.promo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.promo-line {
+  width: 3rem;
+  height: 0.0625rem;
+  background: var(--color-white);
+}
+.promo .tag {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 1rem;
+  color: var(--color-lightgray);
+  font-family: var(--font-alt);
+  font-weight: 400;
+  /* line-height: 50%; */
+  letter-spacing: 0.04rem;
+}
+@media screen and (max-width: 1600px) {
+  .promo p {
+    font-size: 0.75rem;
+  }
+}

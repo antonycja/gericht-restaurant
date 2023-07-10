@@ -1,0 +1,8 @@
+/* .select-boxes {
+    color: red;
+    background-color: red;
+} */
+.select-box {
+    width: 15rem;
+    color: var(--color-black);
+}

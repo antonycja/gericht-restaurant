@@ -1,0 +1,40 @@
+.testimonial-container {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.testimonial-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial-text p {
+  color: var(--color-lightgray);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0.04rem;
+}
+.person-details {
+  position: absolute;
+  bottom: 0;
+}
+.user-img {
+  position: relative;
+  z-index: 1;
+}
+.user-img .user {
+  height: 11rem;
+}
+.user-quote {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  scale: 30%;
+  height: 1.5rem;
+  width: 1.5rem;
+}

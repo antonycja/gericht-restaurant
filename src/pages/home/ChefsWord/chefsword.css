@@ -1,0 +1,23 @@
+.chefswordPage {
+    background-image: url("../../../assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .chefswordPage .page-container{
+    gap: 6rem;
+  }
+  .chef-image-box img{
+    scale: 90%;
+  }
+  .about-chef {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .chefswordPage .header-text-container .heading {
+      font-size: 3rem !important;
+    }
+  }

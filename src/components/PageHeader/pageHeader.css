@@ -1,0 +1,43 @@
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.spoon-container,
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.pageHeader h1,
+.pageHeader h5 {
+  text-transform: capitalize;
+  font-family: var(--font-base);
+  line-height: 130%;
+  font-weight: 700rem;
+}
+.pageHeader h1 {
+  color: var(--color-golden);
+  letter-spacing: 0.2rem;
+}
+.pageHeader h5 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.pageHeader h1,
+.pageHeader h5 {
+  text-transform: capitalize;
+  font-family: var(--font-base);
+  line-height: 130%;
+  font-weight: 700rem;
+}
+
+.quoteImg img {
+  height: 1rem;
+  margin-right: 0.4rem;
+}
+
+
+/* TODO: move p tag styling to hero page styles */

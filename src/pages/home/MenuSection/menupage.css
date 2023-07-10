@@ -1,0 +1,38 @@
+.menuPageBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+.menuPageBackground .pageoverlay {
+  background: var(--color-black);
+  opacity: 0.4;
+}
+
+.active {
+  /* border-bottom: 0.15rem solid var(--color-golden); */
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+.menuPageBackground section {
+  justify-content: flex-start;
+}
+.menuPageBackground .page-container {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 0.1rem;
+}
+
+.menu-link,
+.active {
+  opacity: 1 !important;
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 4rem;
+  transition: opacity 0.3s ease;
+
+}
+.menu-link:hover,
+.active:hover {
+  cursor: pointer;
+}

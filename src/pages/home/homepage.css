@@ -1,0 +1,26 @@
+.Homepage {
+  min-width: 100vw;
+}
+.page-container {
+  margin: 1rem 7.5rem;
+  display: flex;
+  
+}
+section {
+  position: relative;
+  margin: 1rem 7rem;
+  /* border: 1px solid white; */
+  display: flex;
+  color: white;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+  .page-container {
+    margin: 1rem 4rem;
+  }
+  section {
+    margin-top: 0;
+  }
+}
