@@ -1,0 +1,23 @@
+.laurelPage {
+  background-image: url("/src/assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.laurelPage .page-container {
+  gap: 6rem;
+}
+.awards-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.laurels {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2rem;
+  row-gap: 4rem;
+}
+.image-box img {
+  scale: 90%;
+}

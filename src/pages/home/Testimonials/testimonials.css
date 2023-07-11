@@ -5,7 +5,11 @@
 .testimonials-page .header-text-container {
   text-align: center;
 }
-.test {
+.testimonials-page .person-details {
+  position: absolute;
+  bottom: 0;
+}
+.testimonial-grid {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 2rem;

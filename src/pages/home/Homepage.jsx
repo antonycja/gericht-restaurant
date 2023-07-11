@@ -10,6 +10,8 @@ import PromotionsPage from "./MenuPromotions/PromotionsPage";
 import menuData from "../../constants/menuData";
 import ChefsWordPage from "./ChefsWord/ChefsWordPage";
 import TestimonialsPage from "./Testimonials/TestimonialsPage";
+import VideoPage from "./VideoSection/VideoPage";
+import LaurelPage from "./LaurelSection/LaurelPage";
 
 export default function Homepage() {
   const [currentBackground, setCurrentBackground] = useState(
@@ -37,6 +39,8 @@ export default function Homepage() {
         <PromotionsPage dataIndex={menuData[activeIndex]} />
         <ChefsWordPage />
         <TestimonialsPage />
+        <VideoPage />
+        <LaurelPage />
       </main>
     </div>
   );

@@ -1,4 +1,4 @@
-import menuImages from "./menuImages";
+import menuImages from "./Images";
 
 const menuData = [
   {

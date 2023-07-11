@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
               title={"Testimony"}
               heading={"Happy customers"}
             />
-            <div className="test">
+            <div className="testimonial-grid">
               {users.map((user, index) => (
                 <Testimonial
                   key={index}

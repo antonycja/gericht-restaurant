@@ -1,0 +1,29 @@
+.laurel-container {
+  display: flex;
+  gap: 2rem;
+}
+.laurel-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.laurel-img img{
+    height: 5rem;
+}
+.laurel-heading h5 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.0575rem;
+  text-transform: capitalize;
+}
+.laurel-description p {
+  color: var(--color-lightgray);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  letter-spacing: 0.04rem;
+  /* line-height: 175%; */
+  font-weight: 400;
+}
