@@ -12,6 +12,7 @@ import ChefsWordPage from "./ChefsWord/ChefsWordPage";
 import TestimonialsPage from "./Testimonials/TestimonialsPage";
 import VideoPage from "./VideoSection/VideoPage";
 import LaurelPage from "./LaurelSection/LaurelPage";
+import BlogsPage from "./BlogsSection/BlogsPage";
 
 export default function Homepage() {
   const [currentBackground, setCurrentBackground] = useState(
@@ -41,6 +42,7 @@ export default function Homepage() {
         <TestimonialsPage />
         <VideoPage />
         <LaurelPage />
+        <BlogsPage />
       </main>
     </div>
   );

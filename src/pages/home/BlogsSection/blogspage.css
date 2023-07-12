@@ -1,0 +1,11 @@
+.blogsPage .blogs-header {
+  text-align: center;
+}
+.blogsPage .page-container {
+  flex-direction: column;
+  gap: 4rem;
+}
+.blog-contents {
+  display: flex;
+  gap: 2rem;
+}

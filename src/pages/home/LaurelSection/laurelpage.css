@@ -21,3 +21,9 @@
 .image-box img {
   scale: 90%;
 }
+
+@media screen and (max-width: 1600px) {
+  .laurelPage .page-container {
+    gap: 0.5rem;
+  }
+}
