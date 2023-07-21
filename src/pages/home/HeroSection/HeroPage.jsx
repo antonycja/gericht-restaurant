@@ -13,7 +13,7 @@ export default function HeroPage() {
     image: "src/assets/welcome.png",
   };
   return (
-    <section className="outline">
+    <section className="outline heropage">
       <div className="edge-text">
         <p>#Bar</p>
         <p>#Gericht</p>

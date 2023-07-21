@@ -80,3 +80,15 @@ section {
     line-height: 100%;
   }
 }
+@media (max-width: 1150px) {
+  .edge-text {
+    left: -6rem;
+  }
+  .edge-scroll {
+    right: -2rem;
+  }
+  .heropage .pageHeader h1 {
+    font-size: 4.5rem !important;
+  }
+}
+

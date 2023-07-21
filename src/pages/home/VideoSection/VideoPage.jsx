@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
-import images from "../../../constants/Images";
+import {Images} from "../../../constants/Images";
 import "./videopage.css";
 export default function VideoPage() {
   const vidRef = useRef();
@@ -40,7 +40,7 @@ export default function VideoPage() {
             ref={vidRef}
           >
             <source
-              src={images.video}
+              src={Images.video}
               type="video/mp4"
             />
           </video>

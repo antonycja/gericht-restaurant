@@ -7,8 +7,8 @@
   flex-direction: column;
   gap: 0.5rem;
 }
-.laurel-img img{
-    height: 5rem;
+.laurel-img img {
+  height: 5rem;
 }
 .laurel-heading h5 {
   color: var(--color-golden);
@@ -26,4 +26,10 @@
   letter-spacing: 0.04rem;
   /* line-height: 175%; */
   font-weight: 400;
+}
+
+@media (max-width: 1150px) {
+  .laurel-container {
+    gap: 1rem;
+  }
 }

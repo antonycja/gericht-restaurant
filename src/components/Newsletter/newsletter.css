@@ -1,0 +1,25 @@
+.newsletter-form-box {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  /* position: absolute; */
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 40vw;
+  /* left: 0;
+  bottom: 0; */
+}
+
+@media (max-width: 1350px) {
+  .newsletter-header > div:nth-child(1) > div:nth-child(1) > h1:nth-child(2) {
+    font-size: 3rem !important;
+  }
+  .newsletter-box {
+    gap: 2rem !important;
+  }
+}

@@ -1,8 +1,11 @@
-/* .select-boxes {
-    color: red;
-    background-color: red;
-} */
 .select-box {
-    width: 15rem;
-    color: var(--color-black);
+  width: 15rem;
+  font-family: var(--font-alt);
+  color: var(--color-black);
+}
+
+@media (max-width: 1150px) {
+  .select-box {
+    width: 12.5rem;
+  }
 }

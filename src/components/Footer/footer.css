@@ -1,0 +1,31 @@
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer-heading h4 {
+  color: var(--color-crimson);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 0.08rem;
+  line-height: 130%;
+}
+.footer-text-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-text-line p {
+  color: var(--color-lightgray);
+  font-family: var(--font-alt);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.04rem;
+}

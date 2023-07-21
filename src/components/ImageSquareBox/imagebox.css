@@ -8,3 +8,9 @@
     width: 28rem;
   }
 }
+@media (max-width: 1150px) {
+  .image-box img {
+    width: 18rem;
+    scale: 100% !important;
+  }
+}

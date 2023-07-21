@@ -71,3 +71,12 @@
   letter-spacing: 0.04rem;
   bottom: 0;
 }
+
+@media (max-width: 1150px) {
+  .blogcard {
+    width: 25vw;
+  }
+  .blog-title p a {
+    font-size: 1.5rem;
+  }
+}

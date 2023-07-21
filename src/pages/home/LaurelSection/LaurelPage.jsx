@@ -1,7 +1,7 @@
 import ImageBox from "../../../components/ImageSquareBox/ImageBox";
 import Laurel from "../../../components/Laurel/Laurel";
 import PageHeader from "../../../components/PageHeader/PageHeader";
-import Images from "../../../constants/Images";
+import { Images } from "../../../constants/Images";
 import "./laurelpage.css";
 export default function LaurelPage() {
   const details = [

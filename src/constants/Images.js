@@ -10,8 +10,12 @@ import award03 from "../assets/award03.png";
 import award04 from "../assets/award05.png";
 import laurels from "../assets/laurels.png";
 import video from "../assets/meal.mp4";
+import gallery1 from "../assets/gallery01.png";
+import gallery2 from "../assets/gallery02.png";
+import gallery3 from "../assets/gallery03.png";
+import gallery4 from "../assets/gallery04.png";
 
-const Images = {
+export const Images = {
   bar,
   dinner,
   dessert,
@@ -25,5 +29,4 @@ const Images = {
   award04,
   laurels,
 };
-
-export default Images;
+export const galleryImg = [gallery1, gallery2, gallery3, gallery4];

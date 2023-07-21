@@ -1,9 +1,9 @@
-import menuImages from "./Images";
+import { Images } from "./Images";
 
 const menuData = [
   {
-    menuImg: menuImages.bar,
-    promoImg: menuImages.barPromotion,
+    menuImg: Images.bar,
+    promoImg: Images.barPromotion,
     title: "Bar",
     promotionLeft: {
       promoTitle: "wine & beer",
@@ -67,8 +67,8 @@ const menuData = [
     },
   },
   {
-    menuImg: menuImages.dinner,
-    promoImg: menuImages.dinnerPromotion,
+    menuImg: Images.dinner,
+    promoImg: Images.dinnerPromotion,
     title: "Food",
     promotionLeft: {
       promoTitle: "meals & foods",
@@ -152,8 +152,8 @@ const menuData = [
     },
   },
   {
-    menuImg: menuImages.dessert,
-    promoImg: menuImages.dessertPromotion,
+    menuImg: Images.dessert,
+    promoImg: Images.dessertPromotion,
     title: "Desserts",
     promotionLeft: {
       promoTitle: "desserts",

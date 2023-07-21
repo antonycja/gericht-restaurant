@@ -1,0 +1,28 @@
+.mySwiper {
+  width: 100%;
+}
+.slide {
+  max-width: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 0 !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: unset !important;
+  height: 100% !important;
+  bottom: 0 !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 0 !important;
+}
+@media screen and (max-width: 1600px) {
+  .slide {
+    max-width: 12rem;
+  }
+}

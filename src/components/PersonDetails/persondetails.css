@@ -21,9 +21,9 @@
   letter-spacing: 0.04rem;
 }
 .person-details .person {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .person-details h2 {
   color: var(--color-lightgray);
@@ -32,4 +32,10 @@
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.16rem;
+}
+
+@media (max-width: 1350px) {
+  .person-details h2 {
+    font-size: 3rem;
+  }
 }

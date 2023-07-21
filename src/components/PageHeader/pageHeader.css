@@ -33,11 +33,37 @@
   line-height: 130%;
   font-weight: 700rem;
 }
+.social-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-logos span {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  transition: color 3s ease-in;
+}
+.social-logos span :hover {
+  cursor: pointer;
+  scale: 90%;
+  color: var(--color-golden);
+}
 
 .quoteImg img {
   height: 1rem;
   margin-right: 0.4rem;
 }
 
-
 /* TODO: move p tag styling to hero page styles */
+
+@media (max-width: 1150px) {
+  .pageHeader h1 {
+    font-size: 3.5rem !important;
+  }
+  .pageHeader h5 {
+    font-size: 1.3rem ;
+  }
+  .pageHeader p {
+    line-height: 150% !important;
+  }
+}

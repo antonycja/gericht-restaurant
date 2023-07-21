@@ -16,7 +16,7 @@ const users = [
     position: "Chef",
     img: user2,
     description:
-      " As a chef, I take pride in creating exceptional culinary experiences. The restaurant's commitment to quality ingredients and innovative techniques reflects in each dish.",
+      "As a Chef, I take pride in creating exceptional culinary experiences. The restaurant's commitment to quality ingredients reflects in each dish.",
   },
   {
     name: "Robert Fox",

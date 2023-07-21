@@ -12,3 +12,16 @@
   gap: 4rem;
   text-align: center;
 }
+
+@media (max-width: 1150px) {
+  .promotionImage img {
+    height: 60vh;
+  }
+  .promotionImage {
+    display: flex;
+    align-items: center;
+  }
+  .promotions {
+    gap: 1rem;
+  }
+}

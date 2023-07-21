@@ -22,3 +22,12 @@
   line-height: 175%;
   letter-spacing: 0.04rem;
 }
+
+@media (max-width: 1150px) {
+  .about-section h2 {
+    font-size: 3.5rem;
+  }
+  .about-section p {
+    line-height: 160%;
+  }
+}
