@@ -27,3 +27,21 @@
     gap: 0.5rem;
   }
 }
+@media (max-width: 768px) {
+  .laurelPage .image-box {
+    display: none;
+  }
+  .awards-block {
+    justify-content: center;
+    align-items: center;
+  }
+  .laurelPage .pageHeader {
+    text-align: center;
+  }
+}
+@media (max-width: 642px) {
+  .laurels {
+    grid-template-columns: auto;
+    row-gap: 3rem;
+  }
+}

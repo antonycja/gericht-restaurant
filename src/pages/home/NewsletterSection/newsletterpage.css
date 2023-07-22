@@ -81,3 +81,23 @@ footer {
     padding: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .newsletter-box {
+    padding: 1rem;
+  }
+  .Newsletterpage .pageHeader {
+    gap: 1rem;
+  }
+  .Newsletterpage .pageHeader h1 {
+    font-size: 2.5rem !important;
+  }
+  .footer-content-box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .Newsletterpage {
+    height: unset;
+  }
+}

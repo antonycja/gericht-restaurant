@@ -67,3 +67,16 @@
     line-height: 150% !important;
   }
 }
+@media (max-width: 912px) {
+  .pageHeader h1 {
+    font-size: 2.7rem !important;
+  }
+}
+
+@media (max-width: 642px) {
+  .header-text-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

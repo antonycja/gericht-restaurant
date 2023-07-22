@@ -9,3 +9,13 @@
     width: 12.5rem;
   }
 }
+@media (max-width: 768px) {
+  .select-box {
+    width: 11.4rem;
+  }
+}
+@media (max-width: 642px) {
+  .select-box {
+    width: 70vw;
+  }
+}

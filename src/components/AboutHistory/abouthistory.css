@@ -31,3 +31,18 @@
     line-height: 160%;
   }
 }
+@media (max-width: 912px) {
+  .about-section h2 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 642px) {
+  .about-section {
+    justify-content: center;
+    align-items: center;
+  }
+  .about-spoon {
+    text-align: center !important;
+  }
+}

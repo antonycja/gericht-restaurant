@@ -91,4 +91,25 @@ section {
     font-size: 4.5rem !important;
   }
 }
+@media (max-width: 912px) {
+  .heropage .pageHeader h1 {
+    font-size: 3.5rem !important;
+  }
+}
 
+@media (max-width: 642px) {
+  .heropage .pageHeader {
+    position: relative;
+    z-index: 3;
+  }
+  .heropage .image-box {
+    position: absolute;
+    width: 100vw;
+    z-index: 0;
+    opacity: 0.15;
+    bottom: 10%;
+  }
+  .heropage .image-box img {
+    width: 100%;
+  }
+}

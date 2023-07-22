@@ -1,19 +1,33 @@
-.BookTable .page-container{
-    padding: 3rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    width: 100%;
-    background-color: var(--color-black);
-    box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.70); 
-    border: 1px solid rgba(220, 202, 135, 0.20); 
+.BookTable .page-container {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+  background-color: var(--color-black);
+  box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(220, 202, 135, 0.2);
 }
 .BookTable .header-text-container {
-    text-align: center;
+  text-align: center;
 }
 .dropDownLists {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 912px) {
+  .dropDownLists {
+    gap: 1rem;
+  }
+}
+@media (max-width: 642px) {
+  .dropDownLists {
+    flex-direction: column;
+  }
+  .BookTable .page-container {
+    gap: 3rem;
+  }
 }

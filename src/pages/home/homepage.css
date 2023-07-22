@@ -27,4 +27,17 @@ section {
   }
 }
 @media (max-width: 912px) {
+  section {
+    margin: 1rem 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    margin: 1rem 1.85rem;
+  }
+}
+@media (max-width: 642px) {
+  .page-container {
+    flex-direction: column;
+  }
 }

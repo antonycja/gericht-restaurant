@@ -38,3 +38,19 @@
     width: 40vw;
   }
 }
+@media (max-width: 768px) {
+  .galleryPage {
+    height: unset;
+    flex-direction: column;
+    gap: 0rem;
+    padding-bottom: 2rem;
+  }
+  .galleryPage section {
+    min-height: auto;
+  }
+  .gallery-header {
+    width: 80vw;
+    text-align: center;
+  }
+
+}

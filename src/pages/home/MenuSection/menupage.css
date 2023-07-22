@@ -6,7 +6,7 @@
 }
 .menuPageBackground .pageoverlay {
   background: var(--color-black);
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .active {
@@ -35,4 +35,9 @@
 .menu-link:hover,
 .active:hover {
   cursor: pointer;
+}
+@media (max-width: 642px) {
+  .menu-link, .active {
+    font-size: 3rem;
+  }
 }

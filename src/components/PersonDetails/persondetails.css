@@ -39,3 +39,13 @@
     font-size: 3rem;
   }
 }
+@media (max-width: 912px) {
+  .person-details .person h4 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 642px) {
+  .person-details .person h4 {
+    font-size: 1.3rem !important;
+  }
+}

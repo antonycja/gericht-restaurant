@@ -25,3 +25,17 @@
     gap: 1rem;
   }
 }
+@media (max-width: 912px) {
+  .promotionImage {
+    display: none;
+  }
+  .promotions {
+    gap: 3rem;
+  }
+}
+@media (max-width: 642px) {
+  .promotions {
+    flex-direction: column;
+    gap: 3rem !important;
+  }
+}

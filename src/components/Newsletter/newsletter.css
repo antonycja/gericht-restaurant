@@ -17,9 +17,19 @@ input {
 
 @media (max-width: 1350px) {
   .newsletter-header > div:nth-child(1) > div:nth-child(1) > h1:nth-child(2) {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
   .newsletter-box {
     gap: 2rem !important;
+  }
+}
+
+@media (max-width: 642px) {
+  .newsletter-form-box {
+    flex-direction: column;
+    grid-area: 1rem;
+  }
+  input {
+    width: 80vw;
   }
 }

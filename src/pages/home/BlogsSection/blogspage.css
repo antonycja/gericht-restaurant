@@ -9,3 +9,10 @@
   display: flex;
   gap: 2rem;
 }
+
+@media (max-width: 768px) {
+  .blog-contents {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

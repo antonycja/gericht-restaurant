@@ -22,3 +22,16 @@
     font-size: 3rem !important;
   }
 }
+@media (max-width: 912px) {
+  .chefswordPage .page-container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chefswordPage .page-container {
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+
+}

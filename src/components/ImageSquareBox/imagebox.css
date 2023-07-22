@@ -14,3 +14,9 @@
     scale: 100% !important;
   }
 }
+@media (max-width: 912px) {
+  .image-box img {
+    width: 16rem;
+  }
+}
+
