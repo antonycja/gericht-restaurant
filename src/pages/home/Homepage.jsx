@@ -15,7 +15,7 @@ import LaurelPage from "./LaurelSection/LaurelPage";
 import BlogsPage from "./BlogsSection/BlogsPage";
 import GalleryPage from "./GallerySection/GalleryPage";
 import NewsletterPage from "./NewsletterSection/NewsletterPage";
-
+import overlayImg from "../../assets/overlaybg.png";
 export default function Homepage() {
   const [currentBackground, setCurrentBackground] = useState(
     menuData[0].menuImg
@@ -29,7 +29,12 @@ export default function Homepage() {
   return (
     <div className="Homepage">
       <Navbar />
-      <main>
+      <main className="overlay-holder">
+        <img
+          className="main-overlay-img"
+          src={overlayImg}
+          alt="overlay image"
+        />
         <HeroPage />
         <AboutSection />
         <BookTable />
