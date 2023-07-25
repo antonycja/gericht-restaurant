@@ -1,0 +1,76 @@
+.hero-bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.hero-bg .current-page {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.hero-bg .page-container {
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero-bg .current-page h5,
+.hero-bg .title h1 {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  text-transform: capitalize;
+}
+.hero-bg .title h1 {
+  color: var(--color-golden);
+  font-family: var(--font-base);
+  font-size: 5.6rem;
+  letter-spacing: 0.225rem;
+}
+.hero-bg .current-page h5 {
+  color: var(--color-white);
+  font-family: var(--font-alt);
+  font-variant-numeric: lining-nums tabular-nums;
+  font-size: 1.4rem;
+  letter-spacing: 0.06rem;
+}
+.descriptive p {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: capitalize;
+  letter-spacing: 0.08rem;
+}
+.descriptive {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 0.3rem;
+}
+.rightArrow {
+  font-size: 1.5rem;
+  margin: auto;
+}
+.hero-bg .current-page h5:hover {
+  cursor: pointer;
+}
+
+
+@media (max-width: 912px) {
+  .hero-bg .title h1 {
+    font-size: 4.6rem !important;
+    letter-spacing: 0.2rem;
+  }
+}
+@media (max-width: 642px) {
+  .hero-bg .title h1 {
+    text-align: center;
+    font-size: 3.5rem !important;
+    letter-spacing: 0.1rem;
+  }
+  .descriptive p {
+    font-size: 1.5rem;
+  }
+}

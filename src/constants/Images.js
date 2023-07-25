@@ -14,6 +14,9 @@ import gallery1 from "../assets/gallery01.png";
 import gallery2 from "../assets/gallery02.png";
 import gallery3 from "../assets/gallery03.png";
 import gallery4 from "../assets/gallery04.png";
+import servicesbg from "../assets/servicesbg.png";
+import happyHoursbg from "../assets/happyHoursbg.png";
+import aboutbg from "../assets/aboutbg.png";
 
 export const Images = {
   bar,
@@ -30,3 +33,5 @@ export const Images = {
   laurels,
 };
 export const galleryImg = [gallery1, gallery2, gallery3, gallery4];
+
+export const bgImages = { servicesbg, happyHoursbg, aboutbg };

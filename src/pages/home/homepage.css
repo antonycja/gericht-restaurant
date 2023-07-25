@@ -5,17 +5,7 @@
   margin: 1rem 7.5rem;
   display: flex;
 }
-.Homepage .overlay-holder {
-  position: relative;
-  z-index: 10;
-}
-.main-overlay-img {
-  position: absolute;
-  margin: auto;
-  top: 180vh;
-  max-width: 100vw;
-  min-height: 100%;
-}
+
 section {
   position: relative;
   margin: 1rem 7rem;

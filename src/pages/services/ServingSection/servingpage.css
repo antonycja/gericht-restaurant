@@ -1,0 +1,11 @@
+.ServingPage .page-container {
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+.service-btns {
+  display: flex;
+  gap: 1rem;
+}
+
