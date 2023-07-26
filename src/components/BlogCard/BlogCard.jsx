@@ -1,5 +1,5 @@
 import "./blogcard.css";
-export default function BlogCard({ blog }) {
+export default function BlogCard({ content = {}, isBlog = true }) {
   return (
     <>
       <div className="blogcard">
@@ -7,29 +7,31 @@ export default function BlogCard({ blog }) {
           <div className="blog-img">
             <div className="blog-overlay"> </div>
             <img
-              src={blog.image}
+              src={content.image}
               alt="image"
             />
           </div>
         </div>
         <div className="blog-content">
           <div className="date-author">
-            <p className="date">{blog.date}</p>
-            <p className="author">- {blog.author}</p>
+            <p className="date">{content.date}</p>
+            {isBlog && <p className="author">- {content.author}</p>}
           </div>
           <div className="blog-title">
             <p>
-              <a href={blog.blogLink}>{blog.title}</a>
+              <a href={content.blogLink}>{content.title}</a>
             </p>
           </div>
           <div className="blog-summary">
-            <p>{blog.summary}</p>
+            <p>{content.summary}</p>
           </div>
-          <div className="read-more">
-            <p>
-              <a href={blog.blogLink}>Read More</a>
-            </p>
-          </div>
+          {isBlog && (
+            <div className="read-more">
+              <p>
+                <a href={content.blogLink}>Read More</a>
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </>

@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Navbar/>
-      {/* <Homepage/> */}
+      <Homepage/>
       {/* <Servicespage/> */}
       <Aboutpage/>
     </>

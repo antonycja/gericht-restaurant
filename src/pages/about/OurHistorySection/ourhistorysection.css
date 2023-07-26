@@ -1,0 +1,12 @@
+.history-header .pageHeader {
+  text-align: center;
+}
+
+.ourHistory .page-container {
+  flex-direction: column;
+}
+.history-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}

@@ -28,7 +28,7 @@ export default function BlogsPage() {
               {blogData.map((blog, index) => (
                 <BlogCard
                   key={index}
-                  blog={blog}
+                  content={blog}
                 />
               ))}
             </div>
