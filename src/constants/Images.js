@@ -17,6 +17,9 @@ import gallery4 from "../assets/gallery04.png";
 import servicesbg from "../assets/servicesbg.png";
 import happyHoursbg from "../assets/happyHoursbg.png";
 import aboutbg from "../assets/aboutbg.png";
+import contactbg from "../assets/contactbg.png"
+import history1 from "../assets/history1.png";
+import history2 from "../assets/history2.png";
 
 export const Images = {
   bar,
@@ -34,4 +37,6 @@ export const Images = {
 };
 export const galleryImg = [gallery1, gallery2, gallery3, gallery4];
 
-export const bgImages = { servicesbg, happyHoursbg, aboutbg };
+export const bgImages = { servicesbg, happyHoursbg, aboutbg, contactbg };
+
+export const historyImages = { history1, history2 };

@@ -18,10 +18,10 @@ export default function Navbar() {
           </div>
           <ul className="main-nav-links">
             <li className="nav-link">Home</li>
-            <li className="nav-link">Pages</li>
+            <li className="nav-link">About Us</li>
+            <li className="nav-link">Services</li>
+            {/* <li className="nav-link">Blog</li> */}
             <li className="nav-link">Contact Us</li>
-            <li className="nav-link">Blog</li>
-            <li className="nav-link">Landing</li>
           </ul>
           <div className="nav-btn">
             <p>Log In/Registration</p>
@@ -80,10 +80,10 @@ export default function Navbar() {
                 <div className="small-nav">
                   <ul className="nav-links">
                     <li className="nav-link">Home</li>
-                    <li className="nav-link">Pages</li>
+                    <li className="nav-link">About Us</li>
+                    <li className="nav-link">Services</li>
+                    {/* <li className="nav-link">Blog</li> */}
                     <li className="nav-link">Contact Us</li>
-                    <li className="nav-link">Blog</li>
-                    <li className="nav-link">Landing</li>
                   </ul>
                 </div>
                 <MdOutlineRestaurantMenu

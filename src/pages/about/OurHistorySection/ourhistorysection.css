@@ -4,9 +4,18 @@
 
 .ourHistory .page-container {
   flex-direction: column;
+  gap: 4rem;
+}
+.ourHistory .history-images img {
+  scale: 100%;
+  height: auto;
+  min-width: 80%;
 }
 .history-images {
-    display: flex;
-    justify-content: space-between;
-    gap: 8rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.ourHistory section {
+  margin-bottom: 5rem;
 }
