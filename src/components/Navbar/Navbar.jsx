@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -17,11 +18,19 @@ export default function Navbar() {
             />
           </div>
           <ul className="main-nav-links">
-            <li className="nav-link">Home</li>
-            <li className="nav-link">About Us</li>
-            <li className="nav-link">Services</li>
-            {/* <li className="nav-link">Blog</li> */}
-            <li className="nav-link">Contact Us</li>
+            <li className="nav-link">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="nav-link">
+              <Link to="/about">About Us</Link>
+            </li>
+            <li className="nav-link">
+              <Link to="/services">Services</Link>
+            </li>
+            {/* <li className="nav-link"><Link to="/blog">Blog</Link></li> */}
+            <li className="nav-link">
+              <Link to="/contact">Contact Us</Link>
+            </li>
           </ul>
           <div className="nav-btn">
             <p>Log In/Registration</p>
