@@ -3,7 +3,7 @@ import { bgImages } from "../../../constants/Images";
 
 export default function HeroSection() {
   const data = {
-    bg: bgImages.servicesbg,
+    bg: bgImages.aboutbg,
     title: "Welcome to Gerícht",
     currentPage: "About Us",
   };
