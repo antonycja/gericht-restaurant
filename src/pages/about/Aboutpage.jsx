@@ -5,7 +5,7 @@ import TestimonialsPage from "../home/Testimonials/TestimonialsPage";
 import AboutUsSection from "./AboutUsSection/AboutUsSection";
 import HeroSection from "./HeroSection/HeroSection";
 import OurHistorySection from "./OurHistorySection/OurHistorySection";
-import ImageOverlay from "../../components/ImageOverlay/ImageOverlay"
+import ImageOverlay from "../../components/ImageOverlay/ImageOverlay";
 import "./aboutpage.css";
 export default function Aboutpage() {
   return (
