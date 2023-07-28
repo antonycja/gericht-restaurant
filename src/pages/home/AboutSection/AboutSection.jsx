@@ -1,5 +1,7 @@
 import "./aboutSection.css";
 import AboutHistory from "../../../components/AboutHistory/AboutHistory";
+import knife from "../../../assets/knife.png";
+import G from "../../../assets/G.png";
 export default function AboutSection() {
   const aboutDetails = {
     title: "about us",
@@ -29,13 +31,13 @@ export default function AboutSection() {
               <div className="img-container">
                 <div className="top-img">
                   <img
-                    src="src/assets/knife.png"
+                    src={knife}
                     alt=""
                   />
                 </div>
                 <div className="bottom-img">
                   <img
-                    src="src/assets/G.png"
+                    src={G}
                     alt=""
                   />
                 </div>

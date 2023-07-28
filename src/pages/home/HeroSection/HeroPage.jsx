@@ -1,5 +1,6 @@
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import ImageBox from "../../../components/ImageSquareBox/ImageBox";
+import welcome from "../../../assets/welcome.png";
 import "./heropage.css";
 
 export default function HeroPage() {
@@ -10,7 +11,7 @@ export default function HeroPage() {
     description:
       "Embark on an extraordinary culinary journey in a captivating setting. Immerse yourself in a symphony of tantalizing flavors meticulously curated to captivate your senses. Our passionate team is dedicated to crafting an unforgettable dining experience that will leave you craving for more.",
     buttonText: "Explore Menu",
-    image: "src/assets/welcome.png",
+    image: welcome,
   };
   return (
     <section className="outline heropage">

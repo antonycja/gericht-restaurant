@@ -3,6 +3,7 @@ import "./navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
+import logo from "../../assets/gericht.png"
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -13,7 +14,7 @@ export default function Navbar() {
         <nav>
           <div className="logo">
             <img
-              src="src/assets/gericht.png"
+              src={logo}
               alt="logo"
             />
           </div>
