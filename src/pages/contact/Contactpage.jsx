@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import "./contactpage.css";
 import ImageOverlay from "../../components/ImageOverlay/ImageOverlay";
 import NewsletterPage from "../home/NewsletterSection/NewsletterPage";
@@ -18,7 +19,23 @@ export default function Contactpage() {
   };
   return (
     <>
-      <Document {...meta} />
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta
+          name="description"
+          content={meta.description}
+        />
+        <link
+          rel="canonical"
+          href={meta.canonical}
+        />
+        <meta charSet={meta.meta.charset} />
+        <meta
+          name="keywords"
+          content={meta.meta.name.keywords}
+        />
+      </Helmet>
+
       <main className="contact-page">
         <ImageOverlay />
         <HeroSection />

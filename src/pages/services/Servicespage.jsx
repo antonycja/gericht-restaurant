@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import ImageOverlay from "../../components/ImageOverlay/ImageOverlay";
 import HeroPage from "./HeroSection/HeroPage";
 import ServingPage from "./ServingSection/ServingPage";
@@ -22,7 +23,23 @@ export default function Servicespage() {
   };
   return (
     <>
-      <Document {...meta} />
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta
+          name="description"
+          content={meta.description}
+        />
+        <link
+          rel="canonical"
+          href={meta.canonical}
+        />
+        <meta charSet={meta.meta.charset} />
+        <meta
+          name="keywords"
+          content={meta.meta.name.keywords}
+        />
+      </Helmet>
+
       <div className="Servicespage">
         {/* <Navbar /> */}
         <main className="overlay-holder">

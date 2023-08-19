@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import ChefsWordPage from "../home/ChefsWord/ChefsWordPage";
 import GalleryPage from "../home/GallerySection/GalleryPage";
 import NewsletterPage from "../home/NewsletterSection/NewsletterPage";
@@ -22,7 +23,23 @@ export default function Aboutpage() {
   };
   return (
     <>
-      <Document {...meta}/>
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta
+          name="description"
+          content={meta.description}
+        />
+        <link
+          rel="canonical"
+          href={meta.canonical}
+        />
+        <meta charSet={meta.meta.charset} />
+        <meta
+          name="keywords"
+          content={meta.meta.name.keywords}
+        />
+      </Helmet>
+
       <main className="aboutpage">
         <ImageOverlay />
         <HeroSection />

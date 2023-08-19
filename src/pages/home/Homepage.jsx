@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -50,7 +51,23 @@ export default function Homepage() {
 
   return (
     <>
-      <DocumentMeta {...meta} />
+      <Helmet>
+        <title>{meta.title}</title>
+        <meta
+          name="description"
+          content={meta.description}
+        />
+        <link
+          rel="canonical"
+          href={meta.canonical}
+        />
+        <meta charSet={meta.meta.charset} />
+        <meta
+          name="keywords"
+          content={meta.meta.name.keywords}
+        />
+      </Helmet>
+
       <div className="Homepage">
         {/* <Navbar /> */}
         <main className="overlay-holder">
