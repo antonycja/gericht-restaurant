@@ -8,18 +8,33 @@ import ServiceMenuPage from "./MenuPage/MenuPage";
 import NewsletterPage from "../home/NewsletterSection/NewsletterPage";
 
 export default function Servicespage() {
+  const meta = {
+    title: "Gericht restaurant services page built by codeant",
+    description:
+      "The services page with the link to every other page on this gericht restaurant website built by codeant. all our servives are listed on this page",
+    canonical: "https://codeantrestaurant.netlify.app/services",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "restaurent ,gericht,codeant,antonycja,capetown",
+      },
+    },
+  };
   return (
-    <div className="Servicespage">
-      {/* <Navbar /> */}
-      <main className="overlay-holder">
-        <ImageOverlay />
-        <HeroPage />
-        <ServingPage />
-        <ServiceMenuPage />
-        <BookTable />
-        <HappyHours />
-        <NewsletterPage />
-      </main>
-    </div>
+    <>
+      <Document {...meta} />
+      <div className="Servicespage">
+        {/* <Navbar /> */}
+        <main className="overlay-holder">
+          <ImageOverlay />
+          <HeroPage />
+          <ServingPage />
+          <ServiceMenuPage />
+          <BookTable />
+          <HappyHours />
+          <NewsletterPage />
+        </main>
+      </div>
+    </>
   );
 }

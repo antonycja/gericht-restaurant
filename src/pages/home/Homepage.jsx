@@ -18,7 +18,20 @@ import BlogsPage from "./BlogsSection/BlogsPage";
 import GalleryPage from "./GallerySection/GalleryPage";
 import NewsletterPage from "./NewsletterSection/NewsletterPage";
 import ImageOverlay from "../../components/ImageOverlay/ImageOverlay";
+
 export default function Homepage() {
+  const meta = {
+    title: "Gericht restaurant homepage built by codeant",
+    description:
+      "The home page with the link to every other page on this gericht restaurant website built by codeant",
+    canonical: "https://codeantrestaurant.netlify.app/",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "restaurent ,gericht,codeant,antonycja,capetown",
+      },
+    },
+  };
   const [currentBackground, setCurrentBackground] = useState(
     menuData[0].menuImg
   );
@@ -36,28 +49,34 @@ export default function Homepage() {
   };
 
   return (
-    <div className="Homepage">
-      {/* <Navbar /> */}
-      <main className="overlay-holder">
-        <ImageOverlay />
-        <HeroPage goToLink={navigateToPage} />
-        <AboutSection goToLink={navigateToPage} />
-        <BookTable goToLink={navigateToPage}/>
-        <MenuPage
-          currentBackground={currentBackground}
-          activeIndex={activeIndex}
-          onMenuClick={handleClick}
-          data={menuData}
-        />
-        <PromotionsPage dataIndex={menuData[activeIndex]} goToLink={navigateToPage}/>
-        <ChefsWordPage />
-        <TestimonialsPage />
-        <VideoPage />
-        <LaurelPage />
-        <BlogsPage />
-        <GalleryPage />
-        <NewsletterPage />
-      </main>
-    </div>
+    <>
+      <DocumentMeta {...meta} />
+      <div className="Homepage">
+        {/* <Navbar /> */}
+        <main className="overlay-holder">
+          <ImageOverlay />
+          <HeroPage goToLink={navigateToPage} />
+          <AboutSection goToLink={navigateToPage} />
+          <BookTable goToLink={navigateToPage} />
+          <MenuPage
+            currentBackground={currentBackground}
+            activeIndex={activeIndex}
+            onMenuClick={handleClick}
+            data={menuData}
+          />
+          <PromotionsPage
+            dataIndex={menuData[activeIndex]}
+            goToLink={navigateToPage}
+          />
+          <ChefsWordPage />
+          <TestimonialsPage />
+          <VideoPage />
+          <LaurelPage />
+          <BlogsPage />
+          <GalleryPage />
+          <NewsletterPage />
+        </main>
+      </div>
+    </>
   );
 }
