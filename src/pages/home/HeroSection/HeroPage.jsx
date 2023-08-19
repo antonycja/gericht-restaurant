@@ -1,9 +1,9 @@
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import ImageBox from "../../../components/ImageSquareBox/ImageBox";
-import welcome from "../../../assets/welcome.png";
+import welcome from "../../../assets/welcome.webp";
 import "./heropage.css";
 
-export default function HeroPage() {
+export default function HeroPage({goToLink}) {
   const details = {
     title: "Chase the new Flavour",
     heading: "The key to Fine dining",
@@ -13,6 +13,9 @@ export default function HeroPage() {
     buttonText: "Explore Menu",
     image: welcome,
   };
+
+  const goToServices = () => {goToLink("/services")};
+
   return (
     <section className="outline heropage">
       <div className="edge-text">
@@ -26,6 +29,7 @@ export default function HeroPage() {
           headingSize={details.headingSize}
           description={details.description}
           buttonText={details.buttonText}
+          btnClick={goToServices}
         />
         <ImageBox image={details.image} />
       </div>

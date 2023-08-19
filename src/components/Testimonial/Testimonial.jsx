@@ -1,5 +1,5 @@
 import PersonDetails from "../PersonDetails/PersonDetails";
-import quote from "../../assets/quote.png";
+import quote from "../../assets/quote.webp";
 import "./testimonial.css";
 
 export default function Testimonial({name, position, img, description}) {

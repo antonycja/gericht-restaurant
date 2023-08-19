@@ -1,5 +1,5 @@
 import Button from "../Button";
-import quoteImg from "../../assets/quote.png";
+import quoteImg from "../../assets/quote.webp";
 import "./pageHeader.css";
 
 export default function PageHeader({

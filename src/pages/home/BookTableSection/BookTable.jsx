@@ -3,7 +3,7 @@ import InputBox from "../../../components/InputBox/InputBox";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import "./booktable.css";
 
-export default function BookTable() {
+export default function BookTable({goToLink}) {
   const details = {
     title: "Reservations",
     heading: "Book A Table",
@@ -39,6 +39,8 @@ export default function BookTable() {
       ],
     },
   ];
+
+  const goToContact = () => {goToLink("/contact")}
   return (
     <>
       <section className="BookTable">
@@ -57,7 +59,7 @@ export default function BookTable() {
             ))}
           </div>
 
-          <Button text={details.buttonText} />
+          <Button text={details.buttonText} btnClick={goToContact}/>
         </div>
       </section>
     </>

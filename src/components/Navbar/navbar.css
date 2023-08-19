@@ -52,11 +52,11 @@ nav {
   display: flex;
   justify-content: center;
   position: fixed;
-  padding: 4rem;
+  padding: 2rem 4rem;
   width: 100%;
   left: 0;
   top: 0;
-  height: 100vh;
+  height: auto;
   text-align: center;
   background-color: var(--color-black);
   font-size: 1.5rem;
@@ -99,6 +99,8 @@ nav {
     color: var(--color-white);
   }
 }
+
+/* Add mobile design */
 @media screen and (max-width: 912px) {
   .logo img {
     width: 8rem;
@@ -109,7 +111,19 @@ nav {
   nav {
     padding: 1rem 2rem;
   }
+
+  .main-nav-links li:hover,
+  .nav-links li:hover {
+    color: unset;
+    cursor: default;
+    transition: unset;
+  }
+
+  .nav-links li:hover {
+    color: unset;
+  }
 }
+
 @media screen and (max-width: 600px) {
   .nav-btn {
     display: none;

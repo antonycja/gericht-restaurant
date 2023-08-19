@@ -1,5 +1,5 @@
 import ImageBox from "../../../components/ImageSquareBox/ImageBox";
-import chef from "../../../assets/chef.png";
+import chef from "../../../assets/chef.webp";
 import "./chefsword.css";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import PersonDetails from "../../../components/PersonDetails/PersonDetails";

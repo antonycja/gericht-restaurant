@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./homepage.css";
 import Navbar from "../../components/Navbar/Navbar";
 import HeroPage from "./HeroSection/HeroPage";
@@ -26,21 +28,28 @@ export default function Homepage() {
     setCurrentBackground(background);
     setActiveIndex(index);
   };
+
+  const navigate = useNavigate();
+
+  const navigateToPage = (page) => {
+    navigate(page);
+  };
+
   return (
     <div className="Homepage">
       {/* <Navbar /> */}
       <main className="overlay-holder">
         <ImageOverlay />
-        <HeroPage />
-        <AboutSection />
-        <BookTable />
+        <HeroPage goToLink={navigateToPage} />
+        <AboutSection goToLink={navigateToPage} />
+        <BookTable goToLink={navigateToPage}/>
         <MenuPage
           currentBackground={currentBackground}
           activeIndex={activeIndex}
           onMenuClick={handleClick}
           data={menuData}
         />
-        <PromotionsPage dataIndex={menuData[activeIndex]} />
+        <PromotionsPage dataIndex={menuData[activeIndex]} goToLink={navigateToPage}/>
         <ChefsWordPage />
         <TestimonialsPage />
         <VideoPage />

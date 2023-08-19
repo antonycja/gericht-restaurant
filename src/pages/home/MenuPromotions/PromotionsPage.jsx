@@ -2,13 +2,16 @@ import "./promotionspage.css";
 import PageHeader from "../../../components/PageHeader/PageHeader";
 import Button from "../../../components/Button";
 import Promotion from "../../../components/Promotions/Promotion";
-export default function PromotionsPage({ dataIndex }) {
+export default function PromotionsPage({ dataIndex, goToLink }) {
   const promotionImage = dataIndex.promoImg;
-  const btnClick = () => alert("Promotions button clicked");
   const data = {
     pageTitle: "Menu that fits your palate",
     pageHeading: "Today’s Special",
     buttonText: "View More",
+  };
+
+  const goToServices = () => {
+    goToLink("/services");
   };
   return (
     <>
@@ -40,7 +43,7 @@ export default function PromotionsPage({ dataIndex }) {
               </div>
               <Button
                 text={data.buttonText}
-                btnClick={btnClick}
+                btnClick={goToServices}
               />
             </div>
           </section>

@@ -23,8 +23,8 @@ export default function GalleryPage() {
                 title={pageHeader.title}
                 heading={pageHeader.heading}
                 description={pageHeader.description}
-                buttonText={pageHeader.btnText}
-                btnClick={pageHeader.btnClick}
+                // buttonText={pageHeader.btnText}
+                // btnClick={pageHeader.btnClick}
               />
             </div>
           </div>

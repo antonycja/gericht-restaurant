@@ -3,7 +3,7 @@ import "./navbar.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import logo from "../../assets/gericht.png"
+import logo from "../../assets/gericht.png";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -76,6 +76,8 @@ export default function Navbar() {
             <p>Book Table</p>
           </div>
 
+          {/* Mobile Navigation bar starts here*/}
+
           <div className="small-screen-nav">
             <GiHamburgerMenu
               color="#fff"
@@ -89,11 +91,19 @@ export default function Navbar() {
               <div className="small-nav-overlay">
                 <div className="small-nav">
                   <ul className="nav-links">
-                    <li className="nav-link">Home</li>
-                    <li className="nav-link">About Us</li>
-                    <li className="nav-link">Services</li>
-                    {/* <li className="nav-link">Blog</li> */}
-                    <li className="nav-link">Contact Us</li>
+                    <li className="nav-link">
+                      <Link to="/">Home</Link>
+                    </li>
+                    <li className="nav-link">
+                      <Link to="/about">About Us</Link>
+                    </li>
+                    <li className="nav-link">
+                      <Link to="/services">Services</Link>
+                    </li>
+                    {/* <li className="nav-link"><Link to="/blog">Blog</Link></li> */}
+                    <li className="nav-link">
+                      <Link to="/contact">Contact Us</Link>
+                    </li>
                   </ul>
                 </div>
                 <MdOutlineRestaurantMenu

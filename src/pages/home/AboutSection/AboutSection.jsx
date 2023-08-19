@@ -1,8 +1,8 @@
 import "./aboutSection.css";
 import AboutHistory from "../../../components/AboutHistory/AboutHistory";
-import knife from "../../../assets/knife.png";
+import knife from "../../../assets/knife.webp";
 import G from "../../../assets/G.png";
-export default function AboutSection() {
+export default function AboutSection({ goToLink }) {
   const aboutDetails = {
     title: "about us",
     text: "At Gerícht, we are dedicated to elevating your culinary experience to new heights. Our talented team of chefs artfully combines flavors from around the world, creating exquisite dishes that will tantalize your taste buds. With a commitment to impeccable service, we invite you to indulge in a gastronomic journey that celebrates the art of fine dining.",
@@ -14,6 +14,11 @@ export default function AboutSection() {
     buttonText: "Know More",
     align: "right",
   };
+
+  const goToAbout = () => {
+    goToLink("./about");
+  };
+
   return (
     <>
       <div className="aboutSection">
@@ -24,6 +29,7 @@ export default function AboutSection() {
                 title={aboutDetails.title}
                 text={aboutDetails.text}
                 buttonText={aboutDetails.buttonText}
+                btnClick={goToAbout}
                 align={historyDetails.align}
               />
             </div>
@@ -47,6 +53,7 @@ export default function AboutSection() {
               <AboutHistory
                 title={historyDetails.title}
                 text={historyDetails.text}
+                btnClick={goToAbout}
                 buttonText={historyDetails.buttonText}
               />
             </div>

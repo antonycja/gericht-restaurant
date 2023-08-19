@@ -33,7 +33,7 @@ export default function BlogsPage() {
               ))}
             </div>
             <div className="blog-btn">
-              <Button text={pageHeader.btnText} btnClick={pageHeader.btnClick} />
+              {/* <Button text={pageHeader.btnText} btnClick={pageHeader.btnClick} /> */}
             </div>
           </div>
         </section>
